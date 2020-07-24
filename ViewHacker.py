@@ -11,11 +11,9 @@ t = int(input("Enter Time Duration in Minutes(only): "))
 T = 60*t
 n = int(input("Enter Number of Times To Watch: "))
 
-pg.hotkey('win','2') # 2 refers to the position of desired web browser in taskbar
+pg.hotkey('win','6') # 2 refers to the position of desired Tor browser in taskbar
 for i in range(n):
-    time.sleep(0.5)
-    pg.hotkey('ctrl','shift','n') # opens incognito mode 
-    time.sleep(0.5)
+    time.sleep(10)
     pg.typewrite(url)
     pg.hotkey('enter')
     time.sleep(5)
@@ -24,3 +22,4 @@ for i in range(n):
     time.sleep(ti)
     pg.hotkey('ctrl','w')
     time.sleep(0.5)
+    
